@@ -1,4 +1,7 @@
 LayoutExample::Application.routes.draw do
+  get 'a' => 'home#a'
+  get 'b' => 'home#b'
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
