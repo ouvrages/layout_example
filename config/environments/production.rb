@@ -1,4 +1,4 @@
-RailsBaseApp::Application.configure do
+LayoutExample::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -81,7 +81,7 @@ RailsBaseApp::Application.configure do
   if ENV["ERROR_RECIPIENTS"].present?
     config.middleware.use ExceptionNotification::Rack,
       email: {
-        email_prefix: "[RailsBaseApp] ",
+        email_prefix: "[LayoutExample] ",
         sender_address: ENV["ERROR_SENDER"].presence || ENV["ERROR_RECIPIENTS"],
         exception_recipients: ENV["ERROR_RECIPIENTS"].split(":"),
       }

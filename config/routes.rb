@@ -1,4 +1,4 @@
-RailsBaseApp::Application.routes.draw do
+LayoutExample::Application.routes.draw do
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
